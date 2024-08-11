@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    width: 100%;
+}
+#home{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#home img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    height: 90vh;
+    width: 90vw;
+    
+}
+#circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+    
+}
+#top{
+    position: absolute;
+  top: 36%;
+  left: -5%;
+   height: 100%;
+    width: 100%;
+}
+#btm{
+    position: absolute;
+    top: -40%;
+    left: 4%;
+    height: 100%;
+    width:100%;
+    
+}
+
+#top img{
+   
+    transform: translate(-50% , -50%) rotate(-180deg);
+}
+
+#btm img:nth-child(1){
+    transform: translate(-50% , -50%) scale(2)
+}
+#btm img:nth-child(2){
+    transform: translate(-50% , -50%) scale(1.5)
+}
+#btm img:nth-child(3){
+    transform: translate(-50% , -50%) scale(1)
+}
+#top img:nth-child(3){
+    transform: translate(-50% , -50%) rotate(-180deg) scale(1)
+}
+#top img:nth-child(2){
+    transform: translate(-50% , -50%) rotate(-180deg) scale(1.5)
+}
+#top img:nth-child(1){
+    transform: translate(-50% , -50%) rotate(-180deg) scale(2)
+}  
+
+#overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+
+}
+#smallcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50vw;
+    width: 50vw;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    background-color: white;
+}
+ #home #nav , #second #nav{
+ 
+    position: absolute;
+    padding: 20px;
+    z-index: 9999;
+}
+#nav h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#home #colors , #second #colors{
+    display: flex;
+position: absolute;
+right: 3%;
+top: 5%;
+    height: 20px;
+    width: 100px;
+    
+    z-index: 9999;
+}
+ #colors #one{
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 100%;
+    width: 20%;
+}
+#colors #two{
+    background-color: rgba(0, 0, 0, 0.057);
+    height: 100%;
+    width: 20%;
+}
+#colors #three{
+    background-color: rgba(0, 0, 0, 0.386);
+    height: 100%;
+    width: 20%;
+}
+#colors #four{
+    background-color: rgba(0, 0, 0, 0.712);
+    height: 100%;
+    width: 20%;
+}
+#colors #five{
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 20%;
+}
+
+ #home #text , #second #text{
+    position: absolute;
+    z-index: 9999;
+    right: 4%;
+    top: 10%;
+}
+#text h3{
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home #btmnav , #second #btmnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    padding: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#btmnav h3 span{
+    height: 20px;
+    width: 90px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  
+}
+#home #btmnav1 , #second #btmnav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+   
+}
+#centerimg{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    transform: translate(-50% , -50%);
+    z-index: 999;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#centerimg h5{
+    width: 40%;
+    margin-bottom: 10px;
+}
+#img{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50% , -50%);
+    z-index: 999;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#img img{
+    width: 25vw;
+}
+#second{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+#overlay>h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    font-size: 8vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+#gola{
+    position: absolute;
+    height: 50px;
+    z-index: 9999;
+    width: 50px;
+    background-color: rgb(255, 105, 180);
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+    top: 110%;
+}
+#pinkfare{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 35px;
+    transform: translate(-50% , 0%) rotate(30deg);
+    transform-origin: 0% 50%;
+    bottom: -50%;
+    left: 90%;
+    z-index: 999;
+    
+    letter-spacing: 5px;
+}
+#pinkfare h1{
+    font-weight: 100;
+}
+#rectangle{
+    position: absolute;
+    left: 5%;
+    height: 30vh;
+    width: 30vw;
+    top: 150%;
+    background-color:rgba(255, 20, 145, 0.176);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#t{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  white-space: none;
+    transform: translate(-50% , -50%);
+}
+#t h4{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+#t h5 ,h6 ,p{
+    font-weight: 100;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+#digits{
+    position: absolute;
+    top: 80%;
+    left:70%;
+    color: #fff;
+    transform: translate(-50% , -50%);
+    display: flex;
+    gap: 40px;
+    width: 100%;
+   
+    font-weight: 400;
+    font-style: normal;
+}
+#stop{
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#stop #btmtop{
+    position: relative;
+    overflow: hidden;
+    height: 65%;
+    width: 100%;
+   
+  border-bottom: 2px solid #dadada;
+}
+#stop #btmb{
+    position: relative;
+    height: 35%;
+    width: 100%;
+
+
+}
+#btmtop .circles{
+ 
+    position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50% , -50%);
+    height: 10vw;
+    width: 10vw;
+ 
+    border-radius: 50%;
+}
+#btmtop .purple{
+   
+    position: absolute;
+    left: 55%;
+   background-color: #0db7f5;
+
+}
+#btmtop .pink{
+    position: absolute;
+    left: 50%;
+  background-color:#d5a7b4;
+}
+#btmb #one{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%  ,-50%);
+  width: 20%;
+  font-size: 3vw;
+  font-weight: 500;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ line-height: 5vh;
+ opacity: 1;
+}
+#h22{
+    font-size: 3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#btmb #two{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%  ,-50%);
+    width: 20%;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   line-height: 5vh;
+opacity: 0;
+}
+#btmtop h1{
+    position: absolute;
+    bottom: 0%;
+    left: 100%;
+    text-transform: uppercase;
+    font-size: 17vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+    font-weight: 200;
+    z-index: 9999;
+}
+
+@media(max-width:510px){
+     #circle{
+        height: 60vh;
+        width: 220vw;
+     }
+     #top{
+        top: 40%;
+        height: 80%;
+        width: 100%;
+     }
+     #btm{
+
+        height: 80%;
+      
+       top: -30%;
+     }
+     #smallcircle{
+        height: 110vw;
+        width: 130vw;
+        top: 47%;
+     }
+     #home #nav , #second #nav{
+        padding: 10px;
+     }
+     #nav h2{
+        font-size: 5.5vw;
+     }
+     #home #colors , #second #colors{
+        top:4% ;
+     }
+     #home #text , #second #text{
+        top: 8% ;
+        right: 8%;
+     }
+     #img{
+        top: 60%;
+     }
+     #img img {
+        width: 90vw;
+        height: 40vh;
+    }
+    #centerimg h5{
+        width: 40%;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        font-size: 5vw;
+    }
+    #overlay>h1{
+        bottom: 10%;
+        font-size: 12vw;
+    }
+    #home #btmnav , #second #btmnav{
+        padding: 15px;
+        font-size: 4vw;
+    }
+    #home #btmnav1 , #second #btmnav1{
+        padding: 15px;
+        font-size: 4vw;
+    }
+    #gola{
+        height: 70px;
+        width: 70px;
+    }
+    #pinkfare{
+     font-size: 25px;
+     left: 70%;
+     
+     letter-spacing: 0px;
+    }
+    #rectangle{
+        left: 5%;
+        height: 38vh;
+        width: 50vw;
+        background-color:rgba(255, 20, 145, 0.568);
+
+    }
+    #digits{
+    left: 60%;
+    gap: 30px;
+    transform: translate(-50% , 0%);
+    }
+  
+    #btmtop .circles{
+        height: 35vw;
+        width: 35vw;
+    }
+    #btmtop h1{
+        bottom: 10%;
+        font-size: 30vw;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    #btmb #one{
+        width: 70%;
+        font-size: 10vw;
+        top: 40%;
+    }
+    #btmb #two{
+        width: 70%;
+        font-size: 10vw;
+        top: 40%;  
+    }
+     #h22{
+        font-size: 7vw;
+    }
+}
